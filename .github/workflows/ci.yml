@@ -20,6 +20,6 @@ jobs:
       - name: npm install
         run: npm install
       - name: NODE_ENV
-        run: echo $NODE_ENV
+        run: echo $CI
       - name: lint
         run: npm run lint
