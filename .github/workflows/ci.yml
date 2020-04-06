@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - master
+      -
+env:
+  CI: true
 
 jobs:
-  env:
-    CI: true
   lint:
     name: Lint
     runs-on: ubuntu-latest
