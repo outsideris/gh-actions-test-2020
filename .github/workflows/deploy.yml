@@ -14,11 +14,11 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - run: deploy 'dev deployment'
+      - run: echo 'dev deployment'
 
   deploy-production:
     name: Deploy(Production)
     needs: deploy-dev
     runs-on: ubuntu-latest
     steps:
-      - run: deploy 'production deployment'
+      - run: echo 'production deployment'
