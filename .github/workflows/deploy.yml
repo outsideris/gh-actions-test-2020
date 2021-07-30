@@ -9,16 +9,16 @@ jobs:
       - uses: actions/checkout@v2
       -  run: echo 'run tests'
 
-  deploy-alpha:
-    name: Deploy(Alpha)
+  deploy-dev:
+    name: Deploy(Dev)
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - run: deploy 'alpha deployment'
+      - run: deploy 'dev deployment'
 
   deploy-production:
     name: Deploy(Production)
-    needs: deploy-alpha
+    needs: deploy-dev
     runs-on: ubuntu-latest
     steps:
       - run: deploy 'production deployment'
