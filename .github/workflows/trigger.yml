@@ -2,7 +2,7 @@ name: Trigger repository_dispatch
 on: workflow_dispatch
 
 permissions:
-  contents: write
+  repository-projects: write
 
 jobs:
   trigger:
