@@ -1,0 +1,15 @@
+name: Caller Workflow
+
+on:
+  push:
+      
+jobs:
+  use-reusable-workflow:
+    name: Call Reusable Workflow Demo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: outsideris/actions-test/.github/workflows/called2.yaml@2c95077d4b4a760d053013344fb47c7a4708cd89
+      - name: echo
+        run: echo "It's caller workflow"
+  
