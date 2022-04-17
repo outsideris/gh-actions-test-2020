@@ -4,10 +4,10 @@ on:
   push:
       
 jobs:
-  call-workflow-1-in-local-repo:
+  call-workflow-in-another-repo:
     uses: outsideris/actions-test/.github/workflows/called.yaml@4189beb6cbbebde39af9a0a4f3f2695d165973cf
     with:
-      username: other repo
+      username: testuser
     secrets:
       SECRET_SEED: REMOTE_SEED
         
