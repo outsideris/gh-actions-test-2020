@@ -1,4 +1,4 @@
-name: Reusable Caller Workflow
+name: Using Composite
 
 on: [push]
 
