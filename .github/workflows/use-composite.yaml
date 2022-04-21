@@ -11,6 +11,6 @@ jobs:
       - id: foo
         uses: outsideris/actions-test@master
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Outsider'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
